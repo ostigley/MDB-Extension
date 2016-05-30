@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Movie database extension",
+  "description": "This extension shows movie ratings for the titles a user has selected on the page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "film_reel.png" 
+  },
+
+  "permissions": [
+    "activeTab",
+    "http://www.omdbapi.com/"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+    }
+}
