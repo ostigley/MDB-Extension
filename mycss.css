@@ -1,0 +1,45 @@
+body {
+	width: 250px;
+	display: block;
+	font-family: arial;
+	font-size: 15px;
+}
+.poster img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.movieDetails {
+	list-style: none;
+	padding: 0;
+}
+
+.poster img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+li.title {
+	height: 40px;
+	font-size: 20px;
+	color: black;
+}
+
+li.rating {
+	margin-top: 20px;
+}
+
+/*li a {
+	color: blue;
+}*/
+
+/*#Movie {
+	width: 300px;
+}*/
+

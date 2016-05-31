@@ -5,7 +5,7 @@ chrome.tabs.executeScript(null, {file: 'getTitle1.js'}, function (response) {
 		  if (xhr.readyState == 4) {
 		  	movieResponse = JSON.parse(xhr.response)
 		  	var movieDiv = generateMovie(movieResponse)
-		  	document.querySelector("#Movie").appendChild(movieDiv)
+		  	document.querySelector("body").appendChild(movieDiv)
 		  }
 		}
 		xhr.send();
@@ -38,7 +38,7 @@ function generateMovie (movie) {
 	titleLi.innerHTML = `<a target="_blanck" href="http://www.imdb.com/title/${movie.imdbID}">${movie.Title}</a>`
 	ratingLi.innerHTML = '<strong>IMDB Rating:</strong> ' + movie.imdbRating
 	genreLi.innerHTML = '<strong>Genre: </strong>' + movie.Genre
-	synopsisLi.innerHTML = '<strong>Synopsis: ...</srtong>'
+	synopsisLi.innerHTML = '<strong>Synopsis:</srtong>'
 	plotP.innerHTML = movie.Plot
 
 	movieDiv.appendChild(posterDiv)
